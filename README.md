@@ -18,7 +18,8 @@
 电话：17777777777
 ```
 
-![效果图](https://ysl-root.oss-cn-shenzhen.aliyuncs.com/1589015628129.jpg)
+如图<br/>
+<img src="https://ysl-root.oss-cn-shenzhen.aliyuncs.com/1589015628129.jpg" width="50%">
 
 <br/><br/><br/><br/><br/><br/><br/>
 参考 [js版本实现](https://github.com/wzc570738205/smartParsePro)
