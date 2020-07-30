@@ -14,10 +14,35 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        debug {
+            storeFile file('ysl')
+            storePassword "ysl123456"
+            keyAlias "ysl"
+            keyPassword "ysl123456"
+        }
+
+        release {
+            storeFile file('ysl')
+            storePassword "ysl123456"
+            keyAlias "ysl"
+            keyPassword "ysl123456"
+        }
+    }
+
+
     buildTypes {
+        debug {
+            shrinkResources false
+            jniDebuggable false
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 
